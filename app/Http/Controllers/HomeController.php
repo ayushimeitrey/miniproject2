@@ -26,20 +26,4 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function about()
-    {
-        return view('about');
-    }
-
-    function contact(){
-        return view('contact');
-    }
-    function store(Request $request){
-        $name = $request-> name;
-        return redirect()->route('thanks', ['name' => $name]);
-    }
-
-    function thanks($name){
-        return view('thankyou')->with(compact('name'));
-    }
 }

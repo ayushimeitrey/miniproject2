@@ -41,6 +41,15 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
+                                <a class="dropdown-item" href="{{ route('contact')}}"> {{ __('Contact') }}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="dropdown-item" href="{{ route('about')}}"> {{ __('About') }}
+                            </a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
@@ -61,9 +70,9 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <a class="dropdown-item" href="{{ route('about')}}"> About
+                                    <a class="dropdown-item" href="{{ route('contact')}}"> {{ __('Contact') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('contact')}}"> Contact Form
+                                    <a class="dropdown-item" href="{{ route('about')}}"> {{ __('About') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
