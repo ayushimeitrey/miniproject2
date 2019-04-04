@@ -61,6 +61,8 @@
                                         {{ __('Logout') }}
                                     </a>
 
+                                    <a class="dropdown-item" href="{{ route('about')}}"> About
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('contact')}}"> Contact Form
                                     </a>
 

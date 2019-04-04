@@ -1,8 +1,9 @@
 @extends('layouts.app')
 @section('content')
+   <div class="container">
     <div class="card mt-3 pl-2 pl-2">
         <div class="card-title">
-            <h1>Contact Page- Ayushi</h1>
+            <h1>Contact Form</h1>
             <p class="lead">Use below form : </p>
         </div>
         <div class="card-body">
@@ -26,4 +27,5 @@
             </form>
         </div>
     </div>
+   </div>
 @endsection
